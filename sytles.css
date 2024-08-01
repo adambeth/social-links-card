@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --grey-500: #141414;
+  --grey-900: #141414;
   --grey-800: #1f1f1f;
   --grey-700: #333333;
   --green: #c4f82a;
   --white: #ffffff;
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-150: 12px;
+  --text-1: 24px;
+  --text-2: 14px;
+  --text-3: 14px;
 }
 
 * {
@@ -20,25 +26,50 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  background-color: var(--grey-900);
 }
 h1,
 h2,
 h3 {
   text-align: center;
-  padding: 5px;
+  height: auto;
+  line-height: 150%;
+}
+h1 {
+  align-self: stretch;
+  font-size: var(--text-1, 24px);
+  color: var(--white);
+  font-weight: 600;
+}
+h2 {
+  color: var(--green);
+  font-size: var(--text-2, 14px);
+  font-weight: 700;
+}
+h3 {
+  font-size: var(--text-2, 14px);
+  font-weight: 400;
+  color: var(--white);
 }
 a {
   padding-bottom: 10px;
 }
 
-.card {
+.avatar {
+  border-radius: 180px;
+  width: 88px;
+  height: 88px;
   margin: 0 auto;
-  border: 1;
-  border-style: solid;
-  border-color: red;
+}
+.card {
+  padding: var(--spacing-500, 40px);
+  border-radius: 12px;
+  background-color: var(--grey-800);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: var(--spacing-300, 24px);
+  max-width: 384px;
 }
 
 .links {
@@ -50,9 +81,19 @@ a {
 }
 .links a {
   width: 100%;
+  text-decoration: none;
 }
 .links button {
+  color: var(--white);
+  font-size: var(--text-2);
+  padding: var(--spacing-150);
   width: 95%;
+  border-radius: 8px;
+  background: var(--grey-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 .footer {
   position: fixed;
@@ -60,4 +101,8 @@ a {
   bottom: 0px;
   height: 30px;
   width: 100%;
+}
+.attribution{
+  color:white
+}
 }
