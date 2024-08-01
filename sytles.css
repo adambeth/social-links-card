@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --grey-500: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  padding: 5px;
+}
+a {
+  padding-bottom: 10px;
+}
+
+.card {
+  margin: 0 auto;
+  border: 1;
+  border-style: solid;
+  border-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  width: 100%;
+}
+.links button {
+  width: 95%;
+}
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+}
